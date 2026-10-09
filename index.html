@@ -704,7 +704,7 @@ const records = {
 function renderRecord() {
   const tableBody = document.getElementById("recordTableBody");
   const params = new URLSearchParams(window.location.search);
-  const requestedId = (params.get("id") || "1243").trim();
+  const requestedId = (params.get("id") || "1000").trim();
   const record = records[requestedId];
 
   tableBody.replaceChildren();
